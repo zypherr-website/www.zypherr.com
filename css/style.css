@@ -93,6 +93,7 @@ img{
     font-weight: 500;
     color: var(--color2);
     margin: .5rem auto 6.9rem;
+    padding: 0 5%;
 }
 
 .hero .div1 .btn{
