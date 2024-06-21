@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --color1: #143447;
+    --color2: #eef1f3;
+    --color3: #2350ab;
+    --color4: #102C57;
+    --color5: #69a8f1;
+
+    --font1: 'Poppins';
+    --font2: 'Inter';
+    --font3: 'Rubik';
+
+    --semanticPaddings: 4rem 4%;
+    --buttonPaddings: 1.5rem 3rem;
+    --cardPaddings: 2.5rem
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    color: var(--color1);
+    background: var(--color2);
+    line-height: 1.5;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.center h2{
+    font-family: var(--font3);
+    font-size: 4rem;
+}
+.center p{
+    font-weight: 500;
+}
+
+
+/* HERO */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(../imgs/gradient-black-background-with-cubes.avif), linear-gradient(#fff 10%, #111);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--semanticPaddings);
+}
+
+.hero .div1{
+    width: 100%;
+}
+
+.hero .div1 h1{
+    font-family: var(--font3);
+    font-size: 5rem;
+    background: linear-gradient(to right, var(--color2)40%, #333);
+    background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+.hero .div1 p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color2);
+    margin: .5rem auto 6.9rem;
+}
+
+.hero .div1 .btn{
+    display: inline-block;
+    color: #111;
+    background: linear-gradient(to left, var(--color5) 50%, #111 50%) right;
+    background-size: 210%;
+    border: 1.5px solid var(--color5);
+    border-radius: 5px;
+    font-weight: 500;
+    margin-inline: .1rem;
+    padding: var(--buttonPaddings);
+    transition: .5s ease-in-out;
+}
+
+.hero .div1 .btn2{
+    color: var(--color2);
+    background: linear-gradient(to left, transparent 50%, #111 50%) right;
+    background-size: 200%;
+    border: 1.5px solid var(--color2);
+}
+
+.hero .div1 .btn:hover{
+    color: var(--color5);
+    border-color: var(--color5);
+    box-shadow: 0 0 10px var(--color5);
+    background-position: left;
+}
+
+
+/* BENEFITS */
+.benefits{
+    width: 100%;
+    padding: var(--semanticPaddings);
+}
+
+.benefits .benefits-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem .5rem;
+}
+
+.benefits-card .cards-row{
+    padding: 0 .5px;
+}
+
+.benefits-card .card{
+    display: block;
+    width: 100%;
+    background: var(--color5);
+    border-radius: 25px;
+    margin-top: 1.5rem;
+    padding: var(--cardPaddings);
+}
+
+.benefits-card .card img{
+    width: 10rem;
+}
+
+.benefits-card .card h3{
+    font-family: var(--font3);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #123;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-card .card p{
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #123;
+}
+
+.benefits-card .dark-card{
+    background: #123;
+}
+
+.benefits-card .dark-card h3{
+    color: var(--color5);
+}
+
+.benefits-card .dark-card p{
+    color: var(--color2);
+}
+
+
+/* WEBSITE TEMPLATES */
+.templates{
+    width: 100%;
+    color: var(--color2);
+    background: #123;
+    padding: var(--semanticPaddings);
+}
+
+.templates .center h2{
+    background: linear-gradient(to right, var(--color2)40%, #333);
+    background-clip: text;
+    color: transparent;
+}
+
+.templates .templates-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 1.5rem .5rem;
+}
+
+.templates-card .template{
+    box-shadow: 0 0 5px var(--color2);
+    border-radius: 15px;
+    padding: var(--cardPaddings);
+}
+
+.templates .templates-card h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.templates .templates-card img{
+    border-radius: 5px;
+}
+
+.templates .templates-card .features{
+    margin-bottom: 1.5rem;
+}
+
+.templates .templates-card .pricing{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.templates .templates-card .pricing .strike{
+    text-decoration: line-through;
+    color: red;
+}
+
+.templates .templates-card .pricing .price{
+    border: 1.5px solid red;
+    border-radius: 5.5px;
+    padding: 0 1rem;
+}
+
+.templates .templates-card .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.templates .templates-card .btns a{
+    color: var(--color2);
+    border: 1.5px solid var(--color2);
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    transition: .5s;
+}
+.templates .templates-card .btns a:hover{
+    color: var(--color5);
+    border-color: var(--color5);
+    box-shadow: 0 0 5px var(--color5);
+}
+
+
+/* REVIEWS */
+.reviews{
+    width: 100%;
+    padding: var(--semanticPaddings);
+}
+
+.review-content{
+    margin-top: 2.5rem;
+}
+
+.review-card{
+    background: url(../imgs/bg.jpg)no-repeat;
+    background-size: cover;
+    border: 1.5px solid #123;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    padding: var(--cardPaddings);
+}
+
+.review-card img{
+    width: 10rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.review-card h3{
+    font-size: 2.5rem;
+    color: #123;
+}
+
+.review-card .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.review-card p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: .7;
+    color: #123;
+}
+
+.rating{
+    margin-top: 1.5rem;
+}
+
+.rating i{
+    color: #ffa700;
+}
+
+
+/* OTHER SERVICES */
+.other-services{
+    width: 100%;
+    color: var(--color2);
+    background: #123;
+    padding: var(--semanticPaddings);
+}
+
+.other-services .center h2{
+    background: linear-gradient(to right, var(--color2)40%, #333);
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* CONTACT */
+.contact{
+    width: 100%;
+    height: 100%;
+    color: var(--color2);
+    background: #123;
+    padding: var(--semanticPaddings);
+}
+
+.contact .center h2{
+    background: linear-gradient(to right, var(--color2)40%, #333);
+    background-clip: text;
+    color: transparent;
+}
+
+.contact .contact__form{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    margin: 4rem 0 0;
+}
+
+/* DIV1 */
+.contact__form .div1{
+    border: 2px solid var(--color1);
+    box-shadow: 0 0 5px var(--color5);
+    border-radius: 15px;
+    padding: var(--cardPaddings);
+}
+
+.contact__form label{
+    font-size: 1.2rem;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.contact__form label:hover{
+    color: var(--color5);
+}
+.contact__form input, .contact__form textarea{
+    max-width: 100%;
+    width: 40rem;
+    margin: .5rem 0 2rem;
+    padding: .9rem 1rem;
+    border-radius: 4px;
+    border: 1.4px solid var(--color1);
+    box-shadow: 0 0 2.5px var(--color5);
+    background: transparent;
+    color: var(--color2);
+    transition: .4s ease-in-out;
+}
+.contact__form input::placeholder, .contact__form textarea::placeholder{
+    color: var(--color2);
+    opacity: .5;
+}
+.contact__form textarea{
+    height: 10rem;
+    resize: none;
+}
+.contact__form input:focus, .contact__form textarea:focus{
+    border-color: var(--color5);
+    box-shadow: 0 0 10px var(--color5);
+}
+
+.contact__form button{
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 1.3rem;
+    border-radius: 3.5px;
+    color: #123;
+    background: var(--color5);
+    border: 1.5px solid var(--color5);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.contact__form button:hover{
+    color: var(--color5);
+    background: transparent;
+    box-shadow: 0 0 10px var(--color5);
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btns span{
+    border: 1.5px solid var(--color2);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns span:hover{
+    color: var(--color5);
+    border-color: var(--color5);
+}
+
+/* DIV2 */
+.contact__form .div2{
+    max-width: 100%;
+    background: #123;
+    border: 2.5px solid var(--color1);
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--color5);
+    padding: 2rem;
+}
+.contact__form .div2 i{
+    color: var(--color5);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.contact__form .div2 h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+.contact__form .div2 p{
+    font-size: 1.3rem;
+    color: var(--color2);
+}
+.contact__form .div{
+    background: var(--color4);
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--color5);
+    padding: 2rem;
+}
+.contact__form .margin-b{
+    margin-bottom: 2rem;
+}
+/* CONTACT END */
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    color: var(--color2);
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: var(--semanticPaddings);
+}
+.footer p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+.footer p span{
+    color: var(--color5);
+}
+.footer .legals a{
+    color: var(--color2);
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+    transition: .3s;
+}
+.footer .legals a:hover{
+    color: var(--color5);
+}
