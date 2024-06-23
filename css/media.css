@@ -50,7 +50,7 @@
 /* CONTACT MEDIA */
 @media (max-width: 1100px) {
     .contact .contact__form{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 4rem;
     }
 }
