@@ -57,12 +57,6 @@ img{
     font-weight: 500;
 }
 
-/* HEADER */
-.header{
-    width: 100%;
-    text-align: center;
-    padding: 0 2rem;
-}
 
 /* HERO */
 .hero{
@@ -473,6 +467,18 @@ img{
     margin-bottom: 2rem;
 }
 /* CONTACT END */
+
+
+/* NOTE SECTION START */
+.note{
+    padding: 2rem 12%;
+    color: #123;
+    font-weight: 500;
+}
+.note .mb{
+    margin-bottom: 2rem;
+}
+/* NOTE SECTION END */
 
 
 /* FOOTER */
