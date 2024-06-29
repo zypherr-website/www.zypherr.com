@@ -489,7 +489,7 @@ img{
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
-    padding: var(--semanticPaddings);
+    padding: 1.5rem 5%;
 }
 .footer p{
     font-size: 1.2rem;
@@ -508,4 +508,5 @@ img{
 }
 .footer .legals a:hover{
     color: var(--color5);
+    text-decoration: underline;
 }
