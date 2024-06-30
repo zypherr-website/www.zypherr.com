@@ -263,6 +263,33 @@ img{
 }
 
 
+/* CATEGORY FILTER */
+.choose-category .filter button{
+    color: var(--color2);
+    background: transparent;
+    font-family: var(--font1);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 1.5px solid var(--color2);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    margin-inline: .5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.choose-category .filter button:hover, .choose-category .filter button:focus{
+    color: var(--color4);
+    background: var(--color5);
+    border-color: var(--color5);
+}
+.content{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
 /* REVIEWS */
 .reviews{
     width: 100%;
