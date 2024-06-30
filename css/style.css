@@ -264,6 +264,9 @@ img{
 
 
 /* CATEGORY FILTER */
+.choose-category{
+    margin-top: 3.5rem;
+}
 .choose-category .filter button{
     color: var(--color2);
     background: transparent;
