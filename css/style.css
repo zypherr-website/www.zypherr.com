@@ -285,6 +285,10 @@ img{
     background: var(--color5);
     border-color: var(--color5);
 }
+.choose-category .filter .active{
+    color: var(--color5);
+    border-color: var(--color5);
+}
 .content{
     display: none;
 }
