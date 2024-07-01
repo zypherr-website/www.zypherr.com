@@ -276,7 +276,7 @@ img{
     border: 1.5px solid var(--color2);
     border-radius: 5px;
     padding: .5rem 1rem;
-    margin-inline: .5rem;
+    margin: .5rem;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
