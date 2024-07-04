@@ -96,7 +96,7 @@ img{
     padding: 0 5%;
 }
 
-.hero .div1 .btn{
+.hero .div1 .btn-h{
     display: inline-block;
     color: #111;
     background: linear-gradient(to left, var(--color5) 50%, #111 50%) right;
@@ -116,7 +116,7 @@ img{
     border: 1.5px solid var(--color2);
 }
 
-.hero .div1 .btn:hover{
+.hero .div1 .btn-h:hover{
     color: var(--color5);
     border-color: var(--color5);
     box-shadow: 0 0 10px var(--color5);
