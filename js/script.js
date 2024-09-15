@@ -7,7 +7,7 @@ const swiper = new Swiper('.js-review-slider', {
     },
     breakpoints:{
         767:{
-            slidesPerView: 1
+            slidesPerView: 2
         }
     }
 });
