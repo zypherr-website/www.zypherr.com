@@ -36,7 +36,7 @@ function w3AddClass(element, name) {
   }
   
   // Add active class to the current control button (highlight it)
-  let btnContainer = document.getElementById("filter");
+  let btnContainer = document.getElementById("myBtnContainer");
   let btns = btnContainer.getElementsByClassName("btn");
   for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
@@ -45,3 +45,4 @@ function w3AddClass(element, name) {
       this.className += " active";
     });
   }
+

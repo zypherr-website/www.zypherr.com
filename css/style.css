@@ -201,6 +201,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     padding: 1.5rem .5rem;
+    overflow: hidden;
 }
 
 .templates-card .template{
@@ -262,16 +263,25 @@ img{
     box-shadow: 0 0 5px var(--color5);
 }
 
+.content{
+    display: none;
+    transition: 3s ease-in-out;
+}
+.show{
+    display: block;
+    transition: 3s ease-in-out;
+}
 
 /* CATEGORY FILTER */
 .choose-category{
     margin-top: 3.5rem;
 }
-.choose-category .filter button{
+
+#templates .btn {
     color: var(--color2);
     background: transparent;
     font-family: var(--font1);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
     border: 1.5px solid var(--color2);
     border-radius: 5px;
@@ -280,21 +290,17 @@ img{
     cursor: pointer;
     transition: .3s ease-in-out;
 }
-.choose-category .filter button:hover, .choose-category .filter button:focus{
+#templates .btn:hover {
     color: var(--color4);
     background: var(--color5);
     border-color: var(--color5);
 }
-.choose-category .filter .active{
-    color: var(--color5);
+#templates .btn.active {
+    color: var(--color4);
+    background-color: var(--color5);
     border-color: var(--color5);
 }
-.content{
-    display: none;
-}
-.show{
-    display: block;
-}
+
 
 
 /* REVIEWS */
